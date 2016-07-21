@@ -32,24 +32,23 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <script type="text/javascript" src="cordova.js"></script>
-        <!-- JQM scripts  -->
-		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
-		<script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <!-- JQM CSS  -->
         <!--<link rel="stylesheet" type="text/css" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">-->
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css">
+        <!-- JQM scripts  -->
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
         <!-- Application scripts  -->
         <script type="text/javascript" src="js/index.js"></script>
         
         <title>FENIX</title>
     </head>
-    <body>
-        <div class="app">
+    <body data-position="fixed" >
             
 <!-- Start of first page -->
-<div data-role="page" id="p1">
+<div data-role="page" id="p1"  data-theme="f" data-position="fixed">
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
 		<h1>Page 1</h1>
 	</div><!-- /header -->
 
@@ -59,16 +58,16 @@
 		<p>View internal page called <a href="#p2">Page 2</a></p>	
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
 
 <!-- Start of second page -->
-<div data-role="page" id="p2">
+<div data-role="page" id="p2"  data-theme="f" data-position="fixed">
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
 		<h1>Page 2</h1>
 	</div><!-- /header -->
 
@@ -78,11 +77,10 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 		<p><a href="#p1">Back to Page 1</a></p>	
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
             
-        </div><!-- close app namespace -->
     </body>
 </html>
