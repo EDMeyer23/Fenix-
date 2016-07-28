@@ -6,12 +6,12 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>HelloCordova</name>
+    <name>FENIX</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Magic the Gathering Card Management App.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="icanhelp1955@gmail.com" href="http://cordova.io">
+        ITT Student Projects
     </author>
     <content src="index.html" />
     <access origin="*" />
