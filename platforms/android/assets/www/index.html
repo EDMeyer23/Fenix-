@@ -55,7 +55,10 @@
 	<div data-role="content">
     
 		<p>I'm first in the source order so I'm shown as the page.</p>		
-		<p>View internal page called <a href="#p2">Page 2</a></p>	
+		<p>View internal page called 
+			<br/><a href="#p2">Page 2</a></p>
+			<br/><a href="#p3">Page 3</a></p>
+			<br/><a href="#p4">Page 4</a></p>	
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
@@ -82,5 +85,46 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 	</div><!-- /footer -->
 </div><!-- /page -->
             
+
+
+<!-- Start of Third page -->
+<div data-role="page" id="p3"  data-theme="f" data-position="fixed">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
+		<h1>Page 3</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
+I'm just shown if a link that references my ID is beeing clicked.</p>		
+		<p><a href="#p1">Back to Page 1</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<!-- Start of Fourth page -->
+<div data-role="page" id="p4"  data-theme="f" data-position="fixed">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
+		<h1>Page 4</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
+I'm just shown if a link that references my ID is beeing clicked.</p>		
+		<p><a href="#p1">Back to Page 1</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
     </body>
 </html>
