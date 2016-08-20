@@ -19,8 +19,8 @@
 var app = {
     // Application Constructor
     initialize: function() {
+		this.db = { allCards: null, allSets: null };
         this.bindEvents();
-		alert("it\'s time to code!");
     },
     // Bind Event Listeners
     //
@@ -35,6 +35,19 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		// load the big ass JSON data sets
+		// use AJAX - cordova thinks this is a website
+		// puny cordova
+		var path="db/";
+		$.ajax({ url: path + "AllCards-x.json" })
+                .done(function(json) {
+						app.db.allCards = $.parseJSON(json);
+						$.ajax({ url: path + "AllSets-x.json" })
+								.done(function(json) {
+										app.db.allSets = $.parseJSON(json);
+									});
+						});
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,7 +59,20 @@ var app = {
         //receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    },	
+	findObjects: function(obj, key, val) {
+		// ex: app.findObjects(app.db.allCards,"name","Air Elemental")
+		var objects = [];
+		for (var i in obj) {
+			if (!obj.hasOwnProperty(i)) continue;
+			if (typeof obj[i] == 'object') {
+				objects = objects.concat(app.findObjects(obj[i], key, val));
+			} else if (i == key && obj[key] == val) {
+				objects.push(obj);
+			}
+		}
+		return objects;
+	}
 };
 
 app.initialize();
