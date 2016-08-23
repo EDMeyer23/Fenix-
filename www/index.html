@@ -58,7 +58,7 @@
 		<p>View internal page called 
 			<br/><a href="#p2" data-transition="slide">Page 2</a></p>
 			<br/><a href="#p3" data-transition="slide">Page 3</a></p>
-			<br/><a href="#p4" data-transition="slide">Page 4</a></p>	
+			<br/><a href="#p4" data-transition="slide">Search Cards</a></p>	
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
@@ -115,16 +115,21 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
-I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#p1" data-transition="slide">Back to Page 1</a></p>	
+    	<div style="margin:10px;height:100%;width:90%;">
+        <p>Search for card by name<br/>
+        <input type="text" id="txtSrchName" />
+        	<br/>
+            <a href="#" data-role="button" data-mini="true" data-icon="search" id="srchBtnA">Search</a>
+    	</div>
+    	<div id="tempResultDisplay" style="margin:10px;height:250px;width:90%;overflow-y:scroll">
+        </div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
-
+<div id="splashCover" style="display:none; position:absolute; top: 0; left:0; background:rgba(0,0,0,1);text-align:center;vertical-align:middle; -webkit-overflow-scrolling: touch;"></div>
 
     </body>
 </html>
