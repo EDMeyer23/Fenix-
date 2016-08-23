@@ -74,8 +74,10 @@ var app = {
 			var result=
                 app.findObjects(app.db.allCards,"name"
                 ,[_input from user_]);
+			
 		}
 		return objects;
+		return result;
 	}
 
 };
