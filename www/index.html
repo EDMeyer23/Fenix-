@@ -42,6 +42,26 @@
         <script type="text/javascript" src="js/index.js"></script>
         
         <title>FENIX</title>
+        <style>
+			input[type=text] {
+				width: 130px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: white;
+				background-image: url('searchicon.png');
+				background-position: 10px 10px;
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+				-webkit-transition: width 0.4s ease-in-out;
+				transition: width 0.4s ease-in-out;
+			}
+			
+			input[type=text]:focus {
+				width: 100%;
+			}
+		</style>
     </head>
     <body data-position="fixed" >
             
@@ -53,7 +73,6 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
-    
 			<br/><a href="#p2" data-transition="slide">Cards</a></p>
 			<br/><a href="#p3" data-transition="slide">Search</a></p>
 		<br/><a href="#p4" data-transition="slide">Favorites</a></p>
@@ -172,39 +191,12 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 		<h1>Search</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-<head>
-<style>
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%;
-}
-</style>
-</head>
-<body>
+	<div data-role="content">
 
 <p>Animated search form:</p>
 
 <form>
   <input type="text" name="search" placeholder="Search..">
-  
-  <script>
- document.app.findObjects("name").innerHTML = 'name';
- </script>
 
 </form>
     <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
@@ -230,27 +222,29 @@ input[type=text]:focus {
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Start of Fourth page -->
+<!-- Start of Fifth page -->
 <div data-role="page" id="p5"  data-theme="f" data-position="fixed">
 
-	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Page 4</h1>
-	</div><!-- /header -->
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
+        <h1>Page 4</h1>
+    </div><!-- /header -->
 
-	<div data-role="content">	
-    	<div style="margin:10px;height:100%;width:90%;">
+    <div data-role="content">
+        <div style="margin:10px;height:100%;width:90%;">
         <p>Search for card by name<br/>
         <input type="text" id="txtSrchName" />
-        	<br/>
+            <br/>
             <a href="#" data-role="button" data-mini="true" data-icon="search" id="srchBtnA">Search</a>
-    	</div>
-    	<div id="tempResultDisplay" style="margin:10px;height:250px;width:90%;overflow-y:scroll">
         </div>
-	</div><!-- /content -->
+        <div id="tempResultDisplay" style="margin:10px;height:250px;width:90%;overflow-y:scroll">
+        </div>
+    </div><!-- /content -->
 
-	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
+    <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
 </div><!-- /page -->
-    </body>
+
+<div id="splashCover" style="display:none; position:absolute; top: 0; left:0; background:rgba(0,0,0,1);text-align:center;vertical-align:middle; -webkit-overflow-scrolling: touch;"></div>
+</body>
 </html>

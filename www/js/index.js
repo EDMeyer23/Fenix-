@@ -53,16 +53,11 @@ var app = {
 						$('#splashCover').html("<br/><br/><br/><br/><h2 style'color:white'><strong>SET</strong></h3>" + 
 		"<br/><br/><br/><br/><strong>Loading All Sets</strong>");
 						app.db.allCards = $.parseJSON(json);
-						$.ajax({ url: path + "AllSets-x.json" })
-								.done(function(json) {
-										$('#splashCover').html("<br/><br/><br/><br/><h3 style'color:white'><strong>GO</strong></h3>" + 
-		"<br/><br/><br/><br/><strong>Parsing data</strong>");
-										app.db.allSets = $.parseJSON(json);
-											setTimeout(function() { 
-												$('#splashCover').css("display","none");
-												$('#splashCover').html("");
-											}, 2000);
-									});
+                    
+                      setTimeout(function() { 
+                        $('#splashCover').css("display","none");
+                        $('#splashCover').html("");
+                      }, 2000);
 						});
 		
     },
