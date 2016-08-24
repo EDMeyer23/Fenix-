@@ -49,16 +49,40 @@
 <div data-role="page" id="p1"  data-theme="f" data-position="fixed">
 
 	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Page 1</h1>
+		<h1>Home</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
     
-		<p>I'm first in the source order so I'm shown as the page.</p>		
-		<p>View internal page called 
-			<br/><a href="#p2">Page 2</a></p>
-			<br/><a href="#p3">Page 3</a></p>
-			<br/><a href="#p4">Page 4</a></p>	
+			<br/><a href="#p2" data-transition="slide">Cards</a></p>
+			<br/><a href="#p3" data-transition="slide">Search</a></p>
+		<br/><a href="#p4" data-transition="slide">Favorites</a></p>
+ <h4 class="logo">Home </h4>
+    <p>&nbsp;</p>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column"> 
+      <ol>
+        <li><img src="earth.png" width="120" height="86" alt="" class="profile"> </li>
+      </ol>
+    </div>
+    <div class="column">
+      <section>
+        <p> Welcome to the magic app, chose from the following selections below</p>
+        <p>&nbsp;</p>
+      </section>
+      <p>&nbsp;</p>
+    </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+  </div>
+  <div class="gallery"> </div>
+	
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
@@ -71,13 +95,41 @@
 <div data-role="page" id="p2"  data-theme="f" data-position="fixed">
 
 	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Page 2</h1>
+		<h1>Cards</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
-I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#p1">Back to Page 1</a></p>	
+	 <header class="header">
+    <h4 class="logo">Card </h4>
+  </header>
+  <!-- Hero Section -->
+  <section class="intro">
+    <div class="column">
+      <h3>&nbsp;</h3>
+    <img src="magic-basics-cards.jpg" width="140" height="200" alt="" class="profile"> </div>
+    <div class="column">
+      <p>
+        <label for="textfield6"><br>
+          Mana Cost:</label>
+        <input type="text" name="textfield3" id="textfield3">
+        <label for="textfield5"><br>
+          type:</label>
+        <input type="text" name="textfield2" id="textfield2">
+        <label for="textfield"><br>
+          description:</label>
+        <input type="text" name="textfield" id="textfield">
+        &nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+  </div>
+  <div class="gallery"> </div>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
@@ -97,7 +149,13 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 	<div data-role="content">	
 		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
 I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#p1">Back to Page 1</a></p>	
+		<p><a href="#p1" data-transition="slide">Back to Page 1</a></p>
+  <div class="gallery">
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+  </div>
+  <div class="gallery"> </div>	
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
@@ -111,13 +169,60 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 <div data-role="page" id="p4"  data-theme="f" data-position="fixed">
 
 	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Page 4</h1>
+		<h1>Search</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
-I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#p1">Back to Page 1</a></p>	
+<head>
+<style>
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<p>Animated search form:</p>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+  
+  <script>
+ document.app.findObjects("name").innerHTML = 'name';
+ </script>
+
+</form>
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
+      <thead>
+        <tr>
+          <th data-priority="4">Card ID</th>
+          <th>Name</th>
+          <th data-priority="1">Type</th>
+          <th data-priority="2">Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+  <div class="gallery">
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p4"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+  </div>
+  <div class="gallery"> </div>	
 	</div><!-- /content -->
 
 	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
