@@ -66,168 +66,116 @@
     <body data-position="fixed" >
             
 <!-- Start of first page -->
-<div data-role="page" id="p1"  data-theme="f" data-position="fixed">
+<div data-role="page" id="p1"  data-theme="f" data-position="fixed"style="background: url(img/body.png);background-size: 100% 100%;    background-repeat: no-repeat;">
 
-	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader"style="background: url(img/header.png);background-size: 100% 100%;    background-repeat: no-repeat;">
 		<h1>Home</h1>
-	</div><!-- /header -->
 
-	<div data-role="content">
-			<br/><a href="#p2" data-transition="slide">Cards</a></p>
-			<br/><a href="#p3" data-transition="slide">Search</a></p>
-		<br/><a href="#p4" data-transition="slide">Favorites</a></p>
- <h4 class="logo">Home </h4>
-    <p>&nbsp;</p>
-  </header>
-  <!-- Hero Section -->
-  <section class="intro">
-    <div class="column"> 
-      <ol>
-        <li><img src="earth.png" width="120" height="86" alt="" class="profile"> </li>
-      </ol>
-    </div>
-    <div class="column">
-      <section>
-        <p> Welcome to the magic app, chose from the following selections below</p>
-        <p>&nbsp;</p>
-      </section>
-      <p>&nbsp;</p>
-    </div>
-  </section>
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-  </div>
-  <div class="gallery"> </div>
-	
-	</div><!-- /content -->
-
-	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-<!-- Start of second page -->
-<div data-role="page" id="p2"  data-theme="f" data-position="fixed">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Cards</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-	 <header class="header">
-    <h4 class="logo">Card </h4>
-  </header>
-  <!-- Hero Section -->
-  <section class="intro">
-    <div class="column">
-      <h3>&nbsp;</h3>
-    <img src="img/magic-basics-cards.jpg" width="140" height="200" alt="" class="profile"> </div>
-    <div class="column">
-      <p>
-        <label for="textfield6"><br>
-          Mana Cost:</label>
-        <input type="text" name="textfield3" id="textfield3">
-        <label for="textfield5"><br>
-          type:</label>
-        <input type="text" name="textfield2" id="textfield2">
-        <label for="textfield"><br>
-          description:</label>
-        <input type="text" name="textfield" id="textfield">
-        &nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-    </div>
-  </section>
-  <!-- Stats Gallery Section -->
+		<p>Welcome to magic the gathering trading app. Select an option below.</p>		
+
   <div class="gallery">
-<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
+	
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>social</h4>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>search</h4>
+		   <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="img/fav.png" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>favorites</h4>
+
+  </div>
+  <div class="gallery"> </div>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" style="background: url(img/footer.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+ 
+ 
+ 
+<!-- Start of second page -->
+<div data-role="page" id="p2"  data-theme="f" data-position="fixed" style="background: url(img/body.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader" style="background: url(img/header.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+		<h1>Social</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">	 
+			
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '163563564076327',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="page-header">
+  <h1>FB Post</h1>
+</div>
+
+<p>Click the button below to post on FB</p>
+
+<p style="margin-top: 50px">
+  <a class="btn btn-small"  href="http://www.facebook.com">Share to FB</a>
+</p>
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://www.facebook.com',
+  }, function(response){});
+}
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+}, function(response){});
+</script>
+  <h1>Twitter Post</h1>
+</div>
+
+<p>Click the button below to post on Twitter</p>
+
+<p style="margin-top: 50px">
+  <a class="btn btn-small"  href="http://www.Twitter.com">Share to Twitter</a>
+</p>
+<script>
+</script>
+</p>
+<script>
+</script>
+  <div class="gallery">
+	<div class="thumbnail"><a href="#p1"  data-transition="slide"><img src="img/earth.png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>home</h4>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/fire .jpg" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>searches</h4>
+    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="img/fav.png" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>Favorites</h4>
   </div>
   <div class="gallery"> </div>
 	</div><!-- /content -->
 
-	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" style="background: url(img/footer.png);background-size: 100% 100%;    background-repeat: no-repeat;">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
-</div><!-- /page -->
-            
+</div><!-- /page -->          
+
 
 
 <!-- Start of Third page -->
-<div data-role="page" id="p3"  data-theme="f" data-position="fixed">
+<div data-role="page" id="p3"  data-theme="f" data-position="fixed"style="background: url(img/body.png);background-size: 100% 100%;    background-repeat: no-repeat;">
 
-	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-		<h1>Page 3</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
-I'm just shown if a link that references my ID is beeing clicked.</p>		
-		<p><a href="#p1" data-transition="slide">Back to Page 1</a></p>
-  <div class="gallery">
-<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-  </div>
-  <div class="gallery"> </div>	
-	</div><!-- /content -->
-
-	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-
-<!-- Start of Fourth page -->
-<div data-role="page" id="p4"  data-theme="f" data-position="fixed">
-
-	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader" style="background: url(img/header.png);background-size: 100% 100%;    background-repeat: no-repeat;">
 		<h1>Search</h1>
 	</div><!-- /header -->
-
-	<div data-role="content">
-
-<p>Animated search form:</p>
-
-<form>
-  <input type="text" name="search" placeholder="Search..">
-
-</form>
-    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
-      <thead>
-        <tr>
-          <th data-priority="4">Card ID</th>
-          <th>Name</th>
-          <th data-priority="1">Type</th>
-          <th data-priority="2">Cost</th>
-        </tr>
-      </thead>
-      <tbody>
-  <div class="gallery">
-<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p4"><img src="fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/sun.jpg" width="83" height="47" alt=""></a> <a href="#"></a></div>
-  </div>
-  <div class="gallery"> </div>	
-	</div><!-- /content -->
-
-	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-<!-- Start of Fifth page -->
-<div data-role="page" id="p5"  data-theme="f" data-position="fixed">
-
-    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader">
-        <h1>Page 4</h1>
-    </div><!-- /header -->
 
     <div data-role="content">
         <div style="margin:10px;height:100%;width:90%;">
@@ -238,12 +186,48 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
         </div>
         <div id="tempResultDisplay" style="margin:10px;height:250px;width:90%;overflow-y:scroll">
         </div>
-    </div><!-- /content -->
+    
+	
+		  <!-- Stats Gallery Section -->
+  <div class="gallery">
+	<div class="thumbnail"><a href="#p1"  data-transition="slide"><img src="img/earth.png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>home</h4>
+    <div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>social</h4>
+    <div class="thumbnail"><a href="#p4"  data-transition="slide"><img src="img/fav.png" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>Favorites</h4>
+  </div>
+  <div class="gallery"> </div>
+	</div><!-- /content -->
 
-    <div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" >
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" style="background: url(img/footer.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
 </div><!-- /page -->
+
+
+
+<!-- Start of Fourth page -->
+<div data-role="page" id="p4"  data-theme="f" data-position="fixed"style="background: url(img/body.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" class="pageHeader"style="background: url(img/header.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+		<h1>Favorites</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>CARDS ARE HERE (top 3)</p>		
+
+  <div class="gallery">
+	<div class="thumbnail"><a href="#p1"  data-transition="slide"><img src="img/earth.png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>home</h4>
+<div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>Cards</h4>
+    <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>search</h4>
+
+  </div
+  <div class="gallery"> </div>	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-tap-toggle="false" data-position="fixed" class="pageFooter" style="background: url(img/footer.png);background-size: 100% 100%;    background-repeat: no-repeat;">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
 
 <div id="splashCover" style="display:none; position:absolute; top: 0; left:0; background:rgba(0,0,0,1);text-align:center;vertical-align:middle; -webkit-overflow-scrolling: touch;"></div>
 </body>
