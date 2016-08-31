@@ -102,9 +102,65 @@
 	</div><!-- /header -->
 	
 	<div data-role="content">	 
+<<<<<<< HEAD
 		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
 I'm just shown if a link that references my ID is beeing clicked.</p>		
 	 <!-- Stats Gallery Section -->
+=======
+			
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '163563564076327',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="page-header">
+  <h1>FB Post</h1>
+</div>
+
+<p>Click the button below to post on FB</p>
+
+<p style="margin-top: 50px">
+  <a class="btn btn-small"  href="http://www.facebook.com">Share to FB</a>
+</p>
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://www.facebook.com',
+  }, function(response){});
+}
+FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+}, function(response){});
+</script>
+  <h1>Twitter Post</h1>
+</div>
+
+<p>Click the button below to post on Twitter</p>
+
+<p style="margin-top: 50px">
+  <a class="btn btn-small"  href="http://www.Twitter.com">Share to Twitter</a>
+</p>
+<script>
+</script>
+</p>
+<script>
+</script>
+>>>>>>> Robert
   <div class="gallery">
 	<div class="thumbnail"><a href="#p1"  data-transition="slide"><img src="img/earth.png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>home</h4>
     <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/fire .jpg" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>searches</h4>
@@ -162,15 +218,39 @@ I'm just shown if a link that references my ID is beeing clicked.</p>
 	</div><!-- /header -->
 
 	<div data-role="content">	
+<<<<<<< HEAD
 		<p>I'm the second in the source order so I'm hidden when the page loads. <br>
 I'm just shown if a link that references my ID is beeing clicked.</p>		
 
+=======
+		<p>Top 3</p>		
+    <div class="radio-inline" style="padding-left: 0px;">
+    <label class="labelinput">Favorite 1:</label>
+    <label class="radio-inline">
+        <input class="radio" type="radio" value="Card" id="Card"     
+            name="Type" checked="checked"/>
+        <p style="margin: 0; padding-left: 20px; color: black; 
+            font-size: 1.4em;">Card</p>
+    </label>
+	<div class="radio-inline" style="padding-left: 0px;">
+    <label class="labelinput">Favorite 2:</label>
+    <label class="radio-inline">
+        <input class="radio" type="radio" value="Card" id="Card" name="Type" />
+        <p style="margin: 0; padding-left: 20px; color: black;
+            font-size: 1.4em;">Card 2</p>
+    </label>
+</div>
+>>>>>>> Robert
   <div class="gallery">
 	<div class="thumbnail"><a href="#p1"  data-transition="slide"><img src="img/earth.png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>home</h4>
 <div class="thumbnail"><a href="#p2"  data-transition="slide"><img src="img/water .png" width="82" height="46" alt=""></a> <a href="#"></a></div> <h4>Cards</h4>
     <div class="thumbnail"><a href="#p3"  data-transition="slide"><img src="img/fire .jpg" width="83" height="47" alt=""></a> <a href="#"></a></div><h4>search</h4>
 
+<<<<<<< HEAD
   </div>
+=======
+  </div
+>>>>>>> Robert
   <div class="gallery"> </div>	
 	</div><!-- /content -->
 
